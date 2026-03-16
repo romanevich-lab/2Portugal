@@ -25,12 +25,12 @@ if (leadForm) {
     const location = document.getElementById("location")?.value.trim() || "";
     const message = document.getElementById("message")?.value.trim() || "";
 
-    const subject = encodeURIComponent("Новая заявка с сайта 2Portugal");
+    const subject = encodeURIComponent("Заявка с сайта 2Portugal");
     const body = encodeURIComponent(
       `Имя: ${name}\n` +
       `Email: ${email}\n` +
       `Бюджет: ${budget}\n` +
-      `Район: ${location}\n\n` +
+      `Регион: ${location}\n\n` +
       `Комментарий:\n${message}`
     );
 
