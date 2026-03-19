@@ -252,7 +252,8 @@ textarea {
 .buyer-card,
 .step-card,
 .faq-item,
-.contact-form {
+.contact-form,
+.article-card {
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -355,7 +356,8 @@ textarea {
 .catalog-grid,
 .buyers-grid,
 .steps-grid,
-.contact-grid {
+.contact-grid,
+.articles-grid {
   display: grid;
   gap: 20px;
 }
@@ -368,7 +370,8 @@ textarea {
 .region-card,
 .buyer-card,
 .step-card,
-.faq-item {
+.faq-item,
+.article-card {
   padding: 26px;
 }
 
@@ -377,7 +380,8 @@ textarea {
 .property-card h3,
 .buyer-card h3,
 .step-card h3,
-.faq-item h3 {
+.faq-item h3,
+.article-card h3 {
   margin: 0 0 10px;
   font-size: 1.18rem;
   letter-spacing: -0.02em;
@@ -389,7 +393,8 @@ textarea {
 .step-card p,
 .faq-item p,
 .contact-copy p,
-.contact-note {
+.contact-note,
+.article-card p {
   margin: 0;
   color: var(--muted);
   line-height: 1.72;
@@ -452,6 +457,17 @@ textarea {
 
 .buyers-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.articles-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.article-meta {
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 600;
 }
 
 .steps-grid {
@@ -586,7 +602,8 @@ textarea {
   .steps-grid,
   .contact-grid,
   .trust-strip-inner,
-  .buyers-grid {
+  .buyers-grid,
+  .articles-grid {
     grid-template-columns: 1fr;
   }
 
